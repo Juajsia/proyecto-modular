@@ -25,4 +25,4 @@ Para la elaboración de este proyecto se usó unicamente:
 - HTML
 - CSS
 
-no se hizo uno de ningún framework ni librería de estilos.
+no se hizo uso de ningún framework ni librería de estilos.
