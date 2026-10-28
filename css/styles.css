@@ -18,7 +18,7 @@ body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     padding: 0;
     background-color: var(--color-fondo);
     color: var(--color-texto);
@@ -52,8 +52,16 @@ header nav,
 .titulo {
     display: flex;
     gap: 1rem;
-    justify-content: space-between;
+    flex-direction: column; 
     align-items: center;
+}
+
+.titulo {
+    gap: 0;
+}
+
+.titulo h1 {
+    margin: 0;
 }
 
 header nav a:hover,
@@ -98,11 +106,10 @@ main {
 
 .servicios-contacto {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 2rem;
-    margin-bottom: 2rem;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 .servicios {
@@ -192,11 +199,10 @@ footer {
 }
 
 .servicios-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    justify-content: center;
-    margin-top: 2rem;
+    padding: 1rem;
 }
 
 .servicio-card {
@@ -205,7 +211,7 @@ footer {
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 28rem;
+    
 }
 
 .servicio-card h3 {
@@ -220,7 +226,7 @@ footer {
 
 .servicio-card img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 0.35rem;
     margin-bottom: 1rem;
@@ -253,7 +259,8 @@ footer {
 
 #contacto img {
     display: block;
-    width: 20rem;
+    width: 100%;
+    max-width: 19rem;
     height: auto;
 }
 
@@ -277,4 +284,18 @@ footer {
     border: 1px solid #ccc;
     border-radius: 0.5rem;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+ header nav, .titulo {
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ .servicios-contacto {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+ }
+    
 }
