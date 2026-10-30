@@ -26,3 +26,13 @@ Para la elaboración de este proyecto se usó unicamente:
 - CSS
 
 no se hizo uso de ningún framework ni librería de estilos.
+
+### Comparación uso de CSS propio vs bootstrap (evidencia semana 2 - día 2)
+
+| Criterio | CSS propio | bootstrap |
+| :--- | :---: | :---: |
+| Líneas de código escritas | 7 para una card | 8-9 para una card |
+| Tiempo invertido | moderado | corto |
+| Facilidad para hacer cambios | intermedio | intermedio |
+| Legibilidad del HTML | Buena, pero depende del coder | intermedia, pueden quedar etiquetas con muchas clases|
+| Conclusión | requiere de un manejo y conocimiento sólido, el estilizado puede llegar a tomar bastante tiempo | agiliza mucho el tema de estilos, pero al momento de requerir una personalización mayor toca empezar a combinarlo con css |
